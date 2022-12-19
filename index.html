@@ -165,17 +165,19 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-          <video controls autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+          <video controls autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
             <source src="./resources/teaser/teaser-wbc.mp4" type="video/mp4">
           </video>
-          <video controls autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+          <video controls autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
             <source src="./resources/teaser/teaser-pick.mp4" type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            <strong>Whole-body control via a unified learned policy achieves agile and dynamic behaviors on our custom-built low-cost legged manipulator</strong>
-          </h2>
       </div>
     </div>
+    <h2 class="subtitle has-text-centered">
+      <strong>Whole-body control via a unified learned policy achieves agile and dynamic behaviors on our custom-built low-cost legged manipulator</strong>
+    </h2>
   </div>
 </section>
 
@@ -197,24 +199,18 @@
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
-      <div class="column">
+      <div class="column is-full-width is-centered has-text-centered">
         <h2 class="title is-2" style="text-align: center;" id="method-video" >Real-World Demos</h2>
-        <br>
-        <div class="columns is-centered has-text-centered">
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/t6NoCx_zitM" title="Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion (CoRL 2022)"
-                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/t6NoCx_zitM" title="Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion (CoRL 2022)"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-full-width is-centered has-text-centered">
         <h2 class="title is-2" style="text-align: center;" id="oral-video" >Oral Presentation</h2>
-        <br>
-        <div class="columns is-centered has-text-centered">
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/zhpI3JTqQGI" title="[CoRL 2022 Oral Talk] Deep Whole-Body Control" 
-                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/zhpI3JTqQGI" title="[CoRL 2022 Oral Talk] Deep Whole-Body Control" 
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -224,112 +220,113 @@
 
 <section class="section">
   <div class="container">
-    <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-2" style="text-align: center;">Teleoperation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-two-thirds">
-              <div class="content has-text-justified">
-                <p>
-                  Given only the gripper end-effector command and the command velocity of the quadruped, our trained unified policy controls all the joints of the legs and arm in 50 Hz without any finetuning in the real world.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered v-divider">
-            <video controls autoplay loop muted playsinline src="./resources/tele/place.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-            <video controls autoplay loop muted playsinline src="./resources/tele/garbage.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          </div>
-          <div class="columns is-centered has-text-centered v-divider">
-            <video controls autoplay loop muted playsinline src="./resources/tele/bush.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-            <video controls autoplay loop muted playsinline src="./resources/tele/door.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          </div>
-        </div> 
+    <h2 class="title is-2" style="text-align: center;">Teleoperation</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+            Given only the gripper end-effector command and the command velocity of the quadruped, our trained unified policy controls all the joints of the legs and arm in 50 Hz without any finetuning in the real world.
+          </p>
+        </div>
+      </div>
     </div>
-</section>
-
-<section class="section">
-  <div class="container">
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center;">Visual Tracking</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-two-thirds">
-            <div class="content has-text-justified">
-            <p>
-              The robot is tasked to track the AR tag, and the unified policy automatically adjusts the whole-body control to track the AR tag. For example, bending legs in coordination with the arm to keep the camera near the AR tag.
-            </p>
-            </div>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <video controls autoplay loop muted playsinline src="./resources/visual-tracking/human-tracking.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          <video controls autoplay loop muted playsinline src="./resources/visual-tracking/tag-tracking.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <video controls autoplay loop muted playsinline src="./resources/visual-tracking/vis-easy.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          <video controls autoplay loop muted playsinline src="./resources/visual-tracking/vis-hard.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        </div>
-      </div> 
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/tele/place.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/tele/garbage.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/tele/bush.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/tele/door.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-2" style="text-align: center;">Demonstration Replay</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-two-thirds">
-              <div class="content has-text-centered">
-              <p>
-                Here we show the agility of our robot controlled by the unified policy using demonstrations to perform tasks.
-              </p>
-              </div>
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <video controls autoplay loop muted playsinline src="./resources/demo/demo.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-            <video controls autoplay loop muted playsinline src="./resources/demo/wiping.mp4" poster="./resources/loading-icon.gif" style="width: 47.5%; border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-          </div>
-        </div> 
+    <h2 class="title is-2" style="text-align: center;">Visual Tracking</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+        <p>
+          The robot is tasked to track the AR tag, and the unified policy automatically adjusts the whole-body control to track the AR tag. For example, bending legs in coordination with the arm to keep the camera near the AR tag.
+        </p>
+        </div>
       </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/visual-tracking/human-tracking.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/visual-tracking/tag-tracking.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/visual-tracking/vis-easy.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/visual-tracking/vis-hard.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <!-- Abstract. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center;" id="press-coverage">Press Coverage</a></h2>
-        <br>
-        <div class="row">
-          <div class="columns is-centered">
-            <div class="col" style="padding: 20px">
-              <a target="_blank" href="https://www.newscientist.com/video/2344985-ai-trains-cheap-robot-dog-to-coordinate-multiple-limbs/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/New_Scientist_logo.svg" width="500px"></img>
-              </a>
-            </div>
-            <div class="col" style="padding: 20px">
-              <a target="_blank" href="https://www.popsci.com/technology/robot-dog-ai-training/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Popular_Science.svg" width="500px"></img>
-              </a>
-            </div>
-            <div class="col" style="padding: 20px">
-              <a target="_blank" href="https://www.raspberrypi.com/news/this-robots-extra-arm-gives-it-whole-body-control/">
-                <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-ar21.png" width="500px"></img>
-              </a>
-            </div>
-            <div class="col" style="padding: 20px">
-              <a target="_blank" href="https://www.generationrobots.com/blog/en/unitree-robotics-carnegie-mellon-university-researchers-teach-a-robot-dog-limb-coordination/">
-                <img src="https://www.generationrobots.com/blog/wp-content/themes/twentytwelve-child/img/logo-blog-2019.jpg" width="500px"></img>
-              </a>
-            </div>
-          </div>
+    <h2 class="title is-2" style="text-align: center;">Demonstration Replay</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-centered">
+        <p>
+          Here we show the agility of our robot controlled by the unified policy using demonstrations to perform tasks.
+        </p>
         </div>
       </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/demo/demo.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/demo/wiping.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;" id="press-coverage">Press Coverage</h2>
+    <br>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <a target="_blank" href="https://www.newscientist.com/video/2344985-ai-trains-cheap-robot-dog-to-coordinate-multiple-limbs/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/New_Scientist_logo.svg"></img>
+        </a>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <a target="_blank" href="https://www.popsci.com/technology/robot-dog-ai-training/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Popular_Science.svg"></img>
+        </a>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <a target="_blank" href="https://www.raspberrypi.com/news/this-robots-extra-arm-gives-it-whole-body-control/">
+          <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-ar21.png"></img>
+        </a>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <a target="_blank" href="https://www.generationrobots.com/blog/en/unitree-robotics-carnegie-mellon-university-researchers-teach-a-robot-dog-limb-coordination/">
+          <img src="https://www.generationrobots.com/blog/wp-content/themes/twentytwelve-child/img/logo-blog-2019.jpg"></img>
+        </a>
     </div>
   </div>
 </section>
